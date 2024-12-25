@@ -189,11 +189,11 @@ light:
     name: Light - L1
     <<: *light_partition_with_effects_disabled
     segments:
-      - id: leds
+      - id: light_full
         from: 23
         to: 24
         reversed: false
-      - id: leds
+      - id: light_full
         from: 31
         to: 31   
         reversed: false
@@ -201,11 +201,11 @@ light:
     name: Light - L2
     <<: *light_partition_with_effects_disabled
     segments:
-      - id: leds
+      - id: light_full
         from: 1
         to: 2
         reversed: false
-      - id: leds
+      - id: light_full
         from: 21
         to: 22
         reversed: false
@@ -213,11 +213,11 @@ light:
     name: Light - L3
     <<: *light_partition_with_effects_disabled
     segments:
-      - id: leds
+      - id: light_full
         from: 5
         to: 6
         reversed: false
-      - id: leds
+      - id: light_full
         from: 17
         to: 18
         reversed: false
@@ -225,10 +225,10 @@ light:
     name: Light - Top
     <<: *light_partition_with_effects_disabled
     segments:
-      - id: leds
+      - id: light_full
         from: 7
         to: 8
-      - id: leds
+      - id: light_full
         from: 15
         to: 16
         reversed: false
