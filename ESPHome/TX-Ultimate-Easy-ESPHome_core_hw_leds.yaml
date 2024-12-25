@@ -184,6 +184,57 @@ light:
         to: 30
         reversed: false
 
+   #################################################     
+  - id: light_us_L1
+    name: Light - L1
+    <<: *light_partition_with_effects_disabled
+    segments:
+      - id: leds
+        from: 23
+        to: 24
+        reversed: false
+      - id: leds
+        from: 31
+        to: 31   
+        reversed: false
+  - id: light_us_L2
+    name: Light - L2
+    <<: *light_partition_with_effects_disabled
+    segments:
+      - id: leds
+        from: 1
+        to: 2
+        reversed: false
+      - id: leds
+        from: 21
+        to: 22
+        reversed: false
+  - id: light_us_L3
+    name: Light - L3
+    <<: *light_partition_with_effects_disabled
+    segments:
+    segments:
+      - id: leds
+        from: 5
+        to: 6
+        reversed: false
+      - id: leds
+        from: 17
+        to: 18
+        reversed: false
+  - id: light_us_L4
+    name: Light - Top
+    <<: *light_partition_with_effects_disabled
+    segments:
+      - id: leds
+        from: 7
+        to: 8
+      - id: leds
+        from: 15
+        to: 16
+        reversed: false
+###############################################################
+        
   - &light_partition_individual_led
     id: light_00
     name: Light - LED 00
