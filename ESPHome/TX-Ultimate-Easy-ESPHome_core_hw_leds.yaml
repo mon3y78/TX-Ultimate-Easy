@@ -213,7 +213,6 @@ light:
     name: Light - L3
     <<: *light_partition_with_effects_disabled
     segments:
-    segments:
       - id: leds
         from: 5
         to: 6
