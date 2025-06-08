@@ -26,7 +26,7 @@ media_player:
     platform: i2s_audio
     i2s_dout_pin: GPIO15
     i2s_audio_id: if_i2s_audio
-    i2s_comm_fmt: msb
+    i2s_comm_fmt: lsb
     dac_type: external
     mode: mono
     mute_pin:
