@@ -112,7 +112,7 @@ light:
     name: Light output 1
     output: output_relay_1
     platform: binary
-    internal: true
+    internal: false
     restore_mode: ${RELAYS_LIGHT_RESTORE_MODE}
     on_turn_on:
       then:
@@ -132,7 +132,7 @@ light:
     name: Light output 2
     output: output_relay_2
     platform: binary
-    internal: true
+    internal: false
     restore_mode: ${RELAYS_LIGHT_RESTORE_MODE}
     on_turn_on:
       then:
@@ -152,7 +152,7 @@ light:
     name: Light output 3
     output: output_relay_3
     platform: binary
-    internal: true
+    internal: false
     restore_mode: ${RELAYS_LIGHT_RESTORE_MODE}
     on_turn_on:
       then:
@@ -172,7 +172,7 @@ light:
     name: Light output 4
     output: output_relay_4
     platform: binary
-    internal: true
+    internal: false
     restore_mode: ${RELAYS_LIGHT_RESTORE_MODE}
     on_turn_on:
       then:
@@ -194,7 +194,7 @@ light:
     id: light_eu_rl_1_1_bottom
     name: Light - Relay 1 of 1 (bottom)
     platform: partition
-    internal: true
+    internal: false
     disabled_by_default: false
     default_transition_length: ${default_transition_length}
     restore_mode: ${RELAYS_LIGHT_PARTITION_RESTORE_MODE}
@@ -1356,7 +1356,7 @@ select:
     initial_option: "${LIGHT_MODE_BOTTOM_TEXT}"
     optimistic: true
     restore_value: false
-    internal: true
+    internal: false
     entity_category: config
     disabled_by_default: false
     icon: mdi:dots-square
@@ -1411,7 +1411,7 @@ select:
     initial_option: "${LIGHT_MODE_RIGHT_TEXT}"
     optimistic: true
     restore_value: false
-    internal: true
+    internal: false
     entity_category: config
     disabled_by_default: false
     icon: mdi:dots-square
@@ -1463,7 +1463,7 @@ select:
     initial_option: "${RELAY_MODE_TEXT_SWITCH}"
     optimistic: true
     restore_value: false
-    internal: true
+    internal: false
     entity_category: config
     disabled_by_default: false
     icon: mdi:dip-switch
@@ -1568,7 +1568,7 @@ select:
     initial_option: "${RELAY_MODE_TEXT_SWITCH}"
     optimistic: true
     restore_value: false
-    internal: true
+    internal: false
     entity_category: config
     disabled_by_default: false
     icon: mdi:dip-switch
@@ -1673,7 +1673,7 @@ select:
     initial_option: "${RELAY_MODE_TEXT_SWITCH}"
     optimistic: true
     restore_value: false
-    internal: true
+    internal: false
     entity_category: config
     disabled_by_default: false
     icon: mdi:dip-switch
@@ -1774,7 +1774,7 @@ select:
     initial_option: "${RELAY_MODE_TEXT_SWITCH}"
     optimistic: true
     restore_value: false
-    internal: true
+    internal: false
     entity_category: config
     disabled_by_default: false
     icon: mdi:dip-switch
@@ -1813,7 +1813,7 @@ switch:
     output: output_relay_1
     platform: output
     restore_mode: ${RELAYS_SWITCH_RESTORE_MODE}
-    internal: true
+    internal: false
     on_state:
       then:
         - script.execute: show_relay_status
@@ -1838,7 +1838,7 @@ switch:
     output: output_relay_2
     platform: output
     restore_mode: ${RELAYS_SWITCH_RESTORE_MODE}
-    internal: true
+    internal: false
     on_state:
       then:
         - script.execute: show_relay_status
@@ -1863,7 +1863,7 @@ switch:
     output: output_relay_3
     platform: output
     restore_mode: ${RELAYS_SWITCH_RESTORE_MODE}
-    internal: true
+    internal: false
     on_state:
       then:
         - script.execute: show_relay_status
@@ -1888,7 +1888,7 @@ switch:
     output: output_relay_4
     platform: output
     restore_mode: ${RELAYS_SWITCH_RESTORE_MODE}
-    internal: true
+    internal: false
     on_state:
       then:
         - script.execute: show_relay_status
