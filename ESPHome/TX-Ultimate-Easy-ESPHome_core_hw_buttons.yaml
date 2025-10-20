@@ -44,7 +44,7 @@ binary_sensor:
     name: Button 2
     icon: mdi:gesture-tap-box
     platform: template
-    internal: true
+    internal: false
 
   - id: bs_button_3
     name: Button 3
@@ -352,7 +352,7 @@ select:
     initial_option: "${BUTTON_1_ACTION_TEXT}"
     optimistic: true
     restore_value: false
-    internal: true
+    internal: false
     entity_category: config
     disabled_by_default: false
     icon: mdi:dip-switch
